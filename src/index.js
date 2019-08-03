@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
-import * as serviceWorker from './serviceWorker';
-import { createStore } from 'redux';
+import 'babel-polyfill'
+import React from 'react'
+import {render} from 'react-dom'
+import Root from './containers/Root'
+import './styles/index.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-serviceWorker.unregister();
+render(
+    <Root />
+, document.getElementById('root'))
